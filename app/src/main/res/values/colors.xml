@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#2c2c2c</color>
+    <color name="colorAccent">#2c2c2c</color>
+    <color name="color">#191919</color>
+    <color name="textColorPrimary">#373435</color>
+    <color name="textColorPrimaryDark">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#474443</color>
+    <color name="selected_tab">#00E2F9</color>
+    <color name="white_transparent">#B3ffffff</color>
+    <color name="navy">#3b5998</color>
+    <color name="white">#ffffff</color>
+    <color name="orange2">#ffcc00</color>
+    <color name="orange">#FFA621</color>
+    <color name="red">#ce1126</color>
+
+    <color name="dark_grey">#757575</color>
+    <color name="dark_grey2">#999999</color>
+    <color name="green">#36b24a</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+    <!--Payholic-->
+    <color name="payholicTopup">#EE8A19</color>
+    <color name="payholicWithdraw">#4DAF48</color>
+    <color name="payholicRedeem">#CF2E2E</color>
+    <color name="payholicHistory">#489AAF</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/imgIcon"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_ac_orange" />
+
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/txtFacility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_grey"
+        android:layout_marginTop="5dp"
+        android:text="AC"/>
+
+
+
+
+</LinearLayout>

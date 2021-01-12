@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pick_City">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60dp"
+                android:textColor="#000"
+                android:fontFamily="@font/biko_regular"
+                android:text="Available City" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="holic"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_toolbar"/>
+
+    <ListView
+        android:id="@+id/listCity"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="210dp"
+                  android:layout_weight="1"
+                  android:padding="10dp">
+                  <androidx.cardview.widget.CardView
+                      android:id="@+id/cardJakarta"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      app:cardCornerRadius="10dp">
+                      <RelativeLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                          <ImageView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:scaleType="centerCrop"/>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:background="#BB333131"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_marginTop="10dp"
+                                  android:layout_marginStart="15dp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/orange2"
+                                  android:textStyle="bold"
+                                  android:textSize="18sp"
+                                  android:fontFamily="@font/biko_black"
+                                  android:text="Jakarta"/>
+                              <TextView
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginStart="15dp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/orange2"
+                                  android:textStyle="bold"
+                                  android:textSize="10sp"
+                                  android:fontFamily="@font/biko_bold"
+                                  android:text="Availble here"/>
+                              <LinearLayout
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="1"></LinearLayout>
+                              <LinearLayout
+                                  android:layout_marginBottom="20dp"
+                                  android:layout_gravity="bottom"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+                                  <ImageView
+                                      android:layout_width="12dp"
+                                      android:layout_height="12dp"
+                                      android:layout_gravity="center"
+                                      android:layout_marginLeft="10dp"
+                                      android:src="@drawable/ic_place_black_24dp" />
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center"
+                                      android:layout_marginLeft="2dp"
+                                      android:fontFamily="@font/biko_regular"
+                                      android:text="3 places available"
+                                      android:textColor="@color/orange2"
+                                      android:textSize="12sp" />
+                              </LinearLayout>
+                          </LinearLayout>
+                      </RelativeLayout>
+                  </androidx.cardview.widget.CardView>
+              </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardBandung"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="10dp">
+                        <RelativeLayout
+                            android:id="@+id/linBandung"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gedung_sate_pict"
+                                android:scaleType="centerCrop"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="0dp"
+                                android:background="#BB333131"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/biko_black"
+                                    android:text="Bandung"
+                                    android:textColor="@color/orange2"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/biko_bold"
+                                    android:text="Availble here"
+                                    android:textColor="@color/orange2"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"></LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:src="@drawable/ic_place_black_24dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="2dp"
+                                        android:fontFamily="@font/biko_regular"
+                                        android:text="3 places available"
+                                        android:textColor="@color/orange2"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSurabaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#BB333131"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/biko_black"
+                                android:text="Surabaya"/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/biko_bold"
+                                android:text="Availble here"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_place_black_24dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/biko_regular"
+                                    android:text="3 places available"
+                                    android:textColor="@color/orange2"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSemarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#BB333131"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/biko_black"
+                                android:text="Semarang"/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/biko_bold"
+                                android:text="Availble here"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_place_black_24dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/biko_regular"
+                                    android:text="3 places available"
+                                    android:textColor="@color/orange2"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardJogja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#BB333131"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/biko_black"
+                                android:text="Yogyakarta"/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/biko_bold"
+                                android:text="Availble here"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_place_black_24dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/biko_regular"
+                                    android:text="3 places available"
+                                    android:textColor="@color/orange2"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#BB333131"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/orange2"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/biko_black"
+                                android:text="Other City"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

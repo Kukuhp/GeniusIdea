@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401012984499",
+    "firebase_url": "https://coworking-space-43686.firebaseio.com",
+    "project_id": "coworking-space-43686",
+    "storage_bucket": "coworking-space-43686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401012984499:android:28c7e3d1aa24afdbd4bec6",
+        "android_client_info": {
+          "package_name": "geniusidea.coworking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401012984499-i7nvn0sdqh7jqiqeif0vsc8s75cbu29k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "geniusidea.coworking",
+            "certificate_hash": "c5d2ed7e70f34d3c6bdc9ba693ba760d77d59b12"
+          }
+        },
+        {
+          "client_id": "401012984499-1q40uf9j34mfvaqhr6fejaf9j2a4psn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnYw3LAmdOROdiftfTUUYl70L-6uHbmgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401012984499-1q40uf9j34mfvaqhr6fejaf9j2a4psn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
